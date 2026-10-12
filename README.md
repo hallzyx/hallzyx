@@ -49,7 +49,7 @@
 ## Languages & stack
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages in featured projects, by source size across the 6 repos above (excluding dependencies and binaries): TypeScript 85.9%, JavaScript 4.0%, CSS 3.8%, Rust 2.9%, Solidity 1.1%, Other 2.2%."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages across all owned repositories, by code size (forks excluded): TypeScript 44.3%, C# 20.0%, Jupyter Notebook 10.3%, Python 5.3%, JavaScript 4.2%, Other 15.9%."></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg" width="384" alt="Tech stack used in the featured projects. AI agents: Coinbase AgentKit, MCP, x402. Full-stack: TypeScript, React, Next.js, Convex, Clerk, Python. Web3: Solidity, Rust, Arbitrum Stylus, Hardhat, wagmi, Base, Hedera. Data, infra and APIs: PostgreSQL, Docker, PayPal API."></picture>
 </p>
 
@@ -70,5 +70,5 @@
 <p align="center">
 More about me and my projects at <a href="https://iam.arroz.dev/"><b>iam.arroz.dev</b></a> · <a href="https://github.com/hallzyx">github.com/hallzyx</a>
 <br>
-<sub>Data verified on Oct 12, 2026 · Languages measured over the 6 featured repos</sub>
+<sub>Data verified on Oct 12, 2026 · Languages measured over all owned repositories</sub>
 </p>
