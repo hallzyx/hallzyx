@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://iam.arroz.dev/"><img src="https://img.shields.io/badge/Portfolio-iam.arroz.dev-b6f23a?style=for-the-badge&labelColor=111111" alt="Portfolio: iam.arroz.dev"></a>
+<a href="https://iam.arroz.dev/"><img src="https://img.shields.io/badge/Portfolio-iam.arroz.dev-00fcfc?style=for-the-badge&labelColor=07090b" alt="Portfolio: iam.arroz.dev"></a>
 <a href="https://github.com/hallzyx"><img src="https://img.shields.io/badge/GitHub-hallzyx-181717?style=for-the-badge&logo=github" alt="GitHub: hallzyx"></a>
 </p>
 
