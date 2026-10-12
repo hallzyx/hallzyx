@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="373" viewBox="0 0 400 373" role="img" aria-labelledby="t d">
+<title id="t">PayZap · Demo, Hackathon demo · Oct 2026</title>
+<desc id="d">Shows merchants what refunds will cost them before cutting prices, and honors price guarantees via PayPal Sandbox. Stack: Next.js, TypeScript, PayPal API.</desc>
+<style>
+.s{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.tx{fill:#15171a}.mu{fill:#545b66}.ac{fill:#3f6b00}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="399" height="360" rx="14" fill="#ffffff" stroke="#d5d8cf"/>
+<rect x="22" y="0" width="48" height="3" rx="1.5" class="ac"/>
+<g transform="translate(22 22)"><rect x=".5" y=".5" width="59" height="27" rx="13.5" fill="#f0f1ec" stroke="#d5d8cf"/><text x="30.1" y="19.4" text-anchor="middle" class="m mu" font-size="15" font-weight="700">DEMO</text></g>
+<text x="22" y="84" class="s tx" font-size="26" font-weight="800" letter-spacing="-.3">PayZap</text>
+<text x="22" y="109" class="s tx" font-size="17" font-weight="700">Hackathon demo · Oct 2026</text>
+<text x="22" y="138" class="s mu" font-size="17">Shows merchants what refunds will cost</text><text x="22" y="163" class="s mu" font-size="17">them before cutting prices, and honors</text><text x="22" y="188" class="s mu" font-size="17">price guarantees via PayPal Sandbox.</text>
+<g transform="translate(22 233)"><rect x=".5" y=".5" width="78" height="27" rx="6" fill="#f0f1ec" stroke="#d5d8cf"/><text x="39.6" y="19.4" text-anchor="middle" class="m tx" font-size="15">Next.js</text></g><g transform="translate(107 233)"><rect x=".5" y=".5" width="105" height="27" rx="6" fill="#f0f1ec" stroke="#d5d8cf"/><text x="53.2" y="19.4" text-anchor="middle" class="m tx" font-size="15">TypeScript</text></g><g transform="translate(220 233)"><rect x=".5" y=".5" width="105" height="27" rx="6" fill="#f0f1ec" stroke="#d5d8cf"/><text x="53.2" y="19.4" text-anchor="middle" class="m tx" font-size="15">PayPal API</text></g>
+<line x1="22" x2="378" y1="313" y2="313" stroke="#d5d8cf"/>
+<text x="22" y="343" class="m mu" font-size="15">hallzyx/payzap</text>
+<text x="378" y="343" text-anchor="end" class="m ac" font-size="15" font-weight="700">REPO →</text>
+</svg>

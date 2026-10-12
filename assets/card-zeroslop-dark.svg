@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="373" viewBox="0 0 400 373" role="img" aria-labelledby="t d">
+<title id="t">ZeroSlop · Finalist, The Next Craft 2026 · team of 3</title>
+<desc id="d">Checks that whoever opens a PR understands their own change, using a conceptual question and a hypothetical dangerous mutation. Stack: Next.js 16, TypeScript, Convex, Clerk, MCP.</desc>
+<style>
+.s{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.tx{fill:#eceef1}.mu{fill:#a3a9b3}.ac{fill:#b6f23a}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="399" height="360" rx="14" fill="#131519" stroke="#2b3038"/>
+<rect x="22" y="0" width="48" height="3" rx="1.5" class="ac"/>
+<g transform="translate(22 22)"><rect x=".75" y=".75" width="94.8" height="26.5" rx="13.25" fill="#b6f23a1f" stroke="#b6f23a" stroke-width="1.5"/><text x="48.1" y="19.4" text-anchor="middle" class="m ac" font-size="15" font-weight="700">FINALIST</text></g>
+<text x="22" y="84" class="s tx" font-size="26" font-weight="800" letter-spacing="-.3">ZeroSlop</text>
+<text x="22" y="109" class="s ac" font-size="17" font-weight="700">The Next Craft 2026 · team of 3</text>
+<text x="22" y="138" class="s mu" font-size="17">Checks that whoever opens a PR</text><text x="22" y="163" class="s mu" font-size="17">understands their own change, using a</text><text x="22" y="188" class="s mu" font-size="17">conceptual question and a hypothetical</text><text x="22" y="213" class="s mu" font-size="17">dangerous mutation.</text>
+<g transform="translate(22 233)"><rect x=".5" y=".5" width="105" height="27" rx="6" fill="#1a1d22" stroke="#2b3038"/><text x="53.2" y="19.4" text-anchor="middle" class="m tx" font-size="15">Next.js 16</text></g><g transform="translate(134 233)"><rect x=".5" y=".5" width="105" height="27" rx="6" fill="#1a1d22" stroke="#2b3038"/><text x="53.2" y="19.4" text-anchor="middle" class="m tx" font-size="15">TypeScript</text></g><g transform="translate(247 233)"><rect x=".5" y=".5" width="69" height="27" rx="6" fill="#1a1d22" stroke="#2b3038"/><text x="35.1" y="19.4" text-anchor="middle" class="m tx" font-size="15">Convex</text></g><g transform="translate(22 268)"><rect x=".5" y=".5" width="60" height="27" rx="6" fill="#1a1d22" stroke="#2b3038"/><text x="30.6" y="19.4" text-anchor="middle" class="m tx" font-size="15">Clerk</text></g><g transform="translate(89 268)"><rect x=".5" y=".5" width="42" height="27" rx="6" fill="#1a1d22" stroke="#2b3038"/><text x="21.5" y="19.4" text-anchor="middle" class="m tx" font-size="15">MCP</text></g>
+<line x1="22" x2="378" y1="313" y2="313" stroke="#2b3038"/>
+<text x="22" y="343" class="m mu" font-size="15">hallzyx/zeroslop</text>
+<text x="378" y="343" text-anchor="end" class="m ac" font-size="15" font-weight="700">REPO →</text>
+</svg>

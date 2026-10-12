@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="60" viewBox="0 0 600 60" role="img" aria-labelledby="t d">
+<title id="t">arroz</title>
+<desc id="d">Decorative divider with the arroz logo.</desc>
+<style>
+.s{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.tx{fill:#eceef1}.mu{fill:#a3a9b3}.ac{fill:#b6f23a}
+.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs><linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#b6f23a" stop-opacity="0"/>
+<stop offset=".5" stop-color="#b6f23a"/><stop offset="1" stop-color="#b6f23a" stop-opacity="0"/></linearGradient></defs>
+<rect y="29" width="600" height="2" fill="url(#ln)"/>
+<rect x="205.0" y="8" width="190" height="44" rx="22" fill="#0b0c0e" stroke="#2b3038"/>
+<circle cx="234.0" cy="30" r="6" class="ac pulse"/>
+<text x="310.0" y="37" text-anchor="middle" class="m ac" font-size="21" font-weight="700">&lt;arroz/&gt;</text>
+</svg>
