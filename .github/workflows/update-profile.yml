@@ -1,10 +1,17 @@
 name: Update profile
 
-# Refreshes the data-driven parts of the profile README (stats, recent activity)
-# once a week. Can also be run by hand from the Actions tab.
+# Keeps the data-driven parts of the profile README (stats, recent activity,
+# language share) fresh.
+#
+# GitHub cannot start this workflow when you push to another repository, so it
+# polls every hour with a very cheap check (scripts/should_update.py). The real
+# refresh only runs when there is a new day of pushes that the profile does not
+# show yet, and at most once per day. A forced refresh also runs every Monday and
+# whenever the workflow is started by hand from the Actions tab.
 on:
   schedule:
-    - cron: "17 13 * * 1" # Mondays 13:17 UTC (08:17 in Lima)
+    - cron: "23 * * * *" # hourly check
+    - cron: "17 13 * * 1" # weekly forced refresh (Mondays 13:17 UTC)
   workflow_dispatch:
 
 permissions:
@@ -21,23 +28,34 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
 
+      - name: Check whether a refresh is needed
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '17 13 * * 1' }}
+        run: python3 scripts/should_update.py
+
       - name: Set up Python
+        if: steps.check.outputs.update == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.check.outputs.update == 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq fonts-dejavu-core
           python -m pip install --quiet pillow
 
       - name: Regenerate assets and README text
+        if: steps.check.outputs.update == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_profile.py
 
       - name: Commit changes
+        if: steps.check.outputs.update == 'true'
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "Nothing changed, skipping commit."
@@ -46,5 +64,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets
-          git commit -m "chore(profile): refresh stats and recent activity"
+          git commit -m "chore(profile): refresh stats, activity and languages"
           git push
