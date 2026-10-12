@@ -1,66 +1,66 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/83524087?v=4&s=160" width="120" height="120" alt="Avatar de hallzyx" style="border-radius:50%">
+<img src="https://avatars.githubusercontent.com/u/83524087?v=4&s=160" width="120" height="120" alt="hallzyx avatar" style="border-radius:50%">
 
 # Brayan Roberto Ccarita Cruz · `<arroz/>`
 
-**Estudiante de Ingeniería de Software en Lima, Perú.**
-Agentes de IA · Full-stack · Cloud · Web3
+**Software Engineering student in Lima, Peru.**
+AI Agents · Full-stack · Cloud · Web3
 
-[![Portafolio](https://img.shields.io/badge/Portafolio-iam.arroz.dev-b6f23a?style=for-the-badge&labelColor=111111)](https://iam.arroz.dev/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-iam.arroz.dev-b6f23a?style=for-the-badge&labelColor=111111)](https://iam.arroz.dev/)
 [![GitHub](https://img.shields.io/badge/GitHub-hallzyx-181717?style=for-the-badge&logo=github)](https://github.com/hallzyx)
 
 </div>
 
 ---
 
-## 📊 GitHub en números
+## 📊 GitHub at a glance
 
-| 110 | 5 | 36 | oct 2026 |
+| 110 | 5 | 36 | Oct 2026 |
 |:---:|:---:|:---:|:---:|
-| repositorios públicos | premios en hackathons | repos con TypeScript como lenguaje principal | último push público |
+| public repositories | hackathon awards | repos with TypeScript as main language | latest public push |
 
-> Más de 100 repositorios públicos: proyectos de hackathon, retos y experimentos. Estos son los que mejor muestran cómo construyo de punta a punta.
+> 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
 
-## 🏆 Proyectos destacados
+## 🏆 Featured projects
 
-| Proyecto | Qué hace | Tecnologías | Reconocimiento |
+| Project | What it does | Tech | Recognition |
 |---|---|---|---|
-| [**Cryptoon**](https://github.com/hallzyx/cryptoon) · [showcase](https://ethglobal.com/showcase/cryptoon-6caus) | Lector de webtoons Web3 donde el creador se queda con el 100 % de lo que cobra: capítulos a 0,01 USDC y un agente que compra por ti. | `TypeScript` `React` `Coinbase AgentKit` `x402` `Base` | 🥇 Ganador · ETH Global Buenos Aires 2025 |
-| [**Alpacto**](https://github.com/hallzyx/alpacto) · [demo](https://alpacto.arroz.dev) | Pagos justos de fibra de alpaca con escrow on-chain y auditor IA, pensado para productores que nunca tocan cripto. | `TypeScript` `Rust` `Arbitrum Stylus` `ZeroDev` `PostgreSQL` `Docker` | 🥇 Ganador · Ethereum Lima Hackathon 2026 |
-| [**LicitaVerify**](https://github.com/hallzyx/licita-verify) · [demo](https://licita-verify.arroz.dev) | Auditoría ciudadana de compras públicas: hitos anclados en Arkiv y un agente de Telegram que responde preguntas en lenguaje natural. | `Next.js` `TypeScript` `Arkiv SDK` `MCP` `Python` | 🥈 2.º puesto · PunaTech 2026 |
-| [**ZeroSlop**](https://github.com/hallzyx/zeroslop) · [caso de estudio](https://iam.arroz.dev/projects/zeroslop) | Comprueba que quien abre un PR entiende su propio cambio, con una pregunta conceptual y una mutación peligrosa hipotética. | `Next.js 16` `TypeScript` `Convex` `Clerk` `MCP` | 🏁 Finalista · The Next Craft 2026 (equipo de 3) |
-| [**Treasury Swap Guard**](https://github.com/hallzyx/hedera-swapy) · [evidencia testnet](https://github.com/hallzyx/hedera-swapy/blob/main/TESTNET_EVIDENCE.md) | Plantilla para tesorerías DAO en Hedera: swaps HBAR→token en SaucerSwap con límites, listas blancas y aprobaciones impuestas por contrato. | `Solidity` `Next.js` `Hardhat` `wagmi` `Hedera HCS` | Scaffold-HBAR Template Bounty |
-| [**PayZap**](https://github.com/hallzyx/payzap) · [README](https://github.com/hallzyx/payzap#readme) | Muestra al comercio cuánto le costarán los reembolsos antes de bajar precios y honra garantías de precio vía PayPal Sandbox. | `Next.js` `TypeScript` `PayPal API` | Demo de hackathon · oct 2026 |
+| [**Cryptoon**](https://github.com/hallzyx/cryptoon) · [showcase](https://ethglobal.com/showcase/cryptoon-6caus) | Web3 webtoon reader where creators keep 100% of what they earn: chapters at 0.01 USDC and an agent that buys for you. | `TypeScript` `React` `Coinbase AgentKit` `x402` `Base` | 🥇 Winner · ETH Global Buenos Aires 2025 |
+| [**Alpacto**](https://github.com/hallzyx/alpacto) · [demo](https://alpacto.arroz.dev) | Fair payments for alpaca fiber with on-chain escrow and an AI auditor, built for producers who never touch crypto. | `TypeScript` `Rust` `Arbitrum Stylus` `ZeroDev` `PostgreSQL` `Docker` | 🥇 Winner · Ethereum Lima Hackathon 2026 |
+| [**LicitaVerify**](https://github.com/hallzyx/licita-verify) · [demo](https://licita-verify.arroz.dev) | Citizen audit of public procurement: milestones anchored on Arkiv and a Telegram agent that answers questions in natural language. | `Next.js` `TypeScript` `Arkiv SDK` `MCP` `Python` | 🥈 2nd place · PunaTech 2026 |
+| [**ZeroSlop**](https://github.com/hallzyx/zeroslop) · [case study](https://iam.arroz.dev/projects/zeroslop) | Checks that whoever opens a PR understands their own change, using a conceptual question and a hypothetical dangerous mutation. | `Next.js 16` `TypeScript` `Convex` `Clerk` `MCP` | 🏁 Finalist · The Next Craft 2026 (team of 3) |
+| [**Treasury Swap Guard**](https://github.com/hallzyx/hedera-swapy) · [testnet evidence](https://github.com/hallzyx/hedera-swapy/blob/main/TESTNET_EVIDENCE.md) | Template for DAO treasuries on Hedera: HBAR→token swaps on SaucerSwap with limits, allowlists and contract-enforced approvals. | `Solidity` `Next.js` `Hardhat` `wagmi` `Hedera HCS` | Scaffold-HBAR Template Bounty |
+| [**PayZap**](https://github.com/hallzyx/payzap) · [README](https://github.com/hallzyx/payzap#readme) | Shows merchants what refunds will cost them before cutting prices, and honors price guarantees via PayPal Sandbox. | `Next.js` `TypeScript` `PayPal API` | Hackathon demo · Oct 2026 |
 
-👉 [Ver todos los repositorios](https://github.com/hallzyx?tab=repositories)
+👉 [See all repositories](https://github.com/hallzyx?tab=repositories)
 
-## 🧰 Lenguajes en proyectos destacados
+## 🧰 Languages in featured projects
 
 ```text
-TypeScript  ██████████████████████████████████░░  85,9 %
-JavaScript  ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   4,0 %
-CSS         ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3,8 %
-Rust        █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2,9 %
-Solidity    █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1,1 %
-Otros       █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2,2 %
+TypeScript  ██████████████████████████████████░░  85.9%
+JavaScript  ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   4.0%
+CSS         ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3.8%
+Rust        █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2.9%
+Solidity    █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   1.1%
+Other       █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   2.2%
 ```
 
-<sub>Por tamaño del código fuente de los 6 repos de arriba (sin dependencias ni binarios).</sub>
+<sub>By source code size across the 6 repos above (excluding dependencies and binaries).</sub>
 
-## 🕒 Actividad reciente
+## 🕒 Recent activity
 
-- **12 oct 2026** · [payzap](https://github.com/hallzyx/payzap): demo de garantías de precio con PayPal
-- **05 oct 2026** · [hedera-swapy](https://github.com/hallzyx/hedera-swapy): plantilla de tesorería en Hedera testnet
-- **29 ago 2026** · [zeroslop](https://github.com/hallzyx/zeroslop): finalista en The Next Craft
-- **12 ago 2026** · [alpacto](https://github.com/hallzyx/alpacto): ganador en Ethereum Lima
+- **Oct 12, 2026** · [payzap](https://github.com/hallzyx/payzap): price-guarantee demo with PayPal
+- **Oct 5, 2026** · [hedera-swapy](https://github.com/hallzyx/hedera-swapy): treasury template on Hedera testnet
+- **Aug 29, 2026** · [zeroslop](https://github.com/hallzyx/zeroslop): finalist at The Next Craft
+- **Aug 12, 2026** · [alpacto](https://github.com/hallzyx/alpacto): winner at Ethereum Lima
 
 ---
 
 <div align="center">
 
-📫 Más sobre mí y mis proyectos en **[iam.arroz.dev](https://iam.arroz.dev/)**
+📫 More about me and my projects at **[iam.arroz.dev](https://iam.arroz.dev/)**
 
-<sub>Datos verificados el 12 oct 2026</sub>
+<sub>Data verified on Oct 12, 2026</sub>
 
 </div>
