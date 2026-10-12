@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="70" viewBox="0 0 400 70" role="img" aria-labelledby="t d">
+<title id="t">Alpacto: Live Demo</title>
+<desc id="d">Opens alpacto.arroz.dev.</desc>
+<style>
+.s{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.tx{fill:#0e191d}.mu{fill:#4a5961}.ac{fill:#00717a}
+.nd{animation:nd 2.4s ease-in-out infinite}@keyframes nd{0%,100%{opacity:.45}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<path d="M10.5 0.5L399.5 0.5L399.5 47.5L389.5 57.5L0.5 57.5L0.5 10.5Z" fill="#ffffff" stroke="#c9d6db"/>
+<path d="M1 26V10L10 1H44" fill="none" stroke="#00717a" stroke-width="2"/>
+<path d="M342 .5H399.5V47.5L389.5 57.5H342Z" fill="#00717a"/>
+<path d="M362 37L378 21M365 21H378V34" fill="none" stroke="#ffffff" stroke-width="3"/>
+<rect class="nd" x="22" y="14" width="8" height="8" fill="#00717a"/>
+<text x="40" y="23" class="m tx" font-size="16" font-weight="700" letter-spacing="1.2">ALPACTO<tspan class="mu"> · </tspan><tspan class="ac">LIVE DEMO</tspan></text>
+<text x="40" y="44" class="m mu" font-size="14">alpacto.arroz.dev</text>
+<path d="M315 41l8-12M324 41l8-12" stroke="#c9d6db" stroke-width="2"/>
+</svg>
