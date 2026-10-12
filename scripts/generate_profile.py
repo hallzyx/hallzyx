@@ -419,7 +419,7 @@ def lang_body(t):
         ly = 128 + i * 36
         mini = (PW - 2 * PAD - 210) * pct / 100
         rows.append(f'<rect x="{PAD+1}" y="{ly-12}" width="12" height="12" fill="{c}"/>'
-                    f'<text x="{PAD+24}" y="{ly}" class="s tx" font-size="17">{n}</text>'
+                    f'<text x="{PAD+24}" y="{ly}" class="s tx" font-size="17">{escape(fit_name(n))}</text>'
                     f'<rect x="{PAD+136}" y="{ly-9}" width="{max(mini, 3):.1f}" height="6" fill="{c}"/>'
                     f'<text x="{PW-PAD}" y="{ly}" text-anchor="end" class="m mu" font-size="17">{pct:.1f}%</text>')
     bar = cut(bw, 16, 6, 0, "tl br")
@@ -428,18 +428,28 @@ def lang_body(t):
             f'<g clip-path="url(#bc)">{"".join(segs)}<rect class="sheen" x="{bx}" y="{by}" width="{bw}" height="8" fill="#ffffff" opacity="0"/></g>{"".join(rows)}')
     return body, 128 + 5 * 36
 
-NOTE = ["By source size across the 6 featured", "repos (no dependencies or binaries)."]
+NOTE = ["Share of code by size across all", "owned repos (forks excluded)."]
 for _l in NOTE:
     assert tw(_l, 16) <= PW - 2 * PAD, _l
+
+SHORT_LANG = {"Jupyter Notebook": "Jupyter", "Vim Script": "Vim", "Objective-C": "Obj-C", "Dockerfile": "Docker"}
+def fit_name(name, maxw=106):
+    """Language names must stay clear of the mini bar that starts at x = PAD+136."""
+    name = SHORT_LANG.get(name, name)
+    base = name
+    while tw(name, 17) > maxw and len(base) > 1:
+        base = base[:-1]
+        name = base + "…"
+    return name
 
 def panels(theme):
     t = THEMES[theme]
     sb, sh = stack_body(t)
     lb, lh = lang_body(t)
     H = max(sh, lh + 78) + 4
-    lang = svg(PW, H, "Languages in featured projects",
-               "; ".join(f"{n} {p}%" for n, p, _ in LANGS) + ". By source size across the 6 featured repositories.",
-               f'{panel(t, PW, H)}{head("LANGUAGES · FEATURED")}{lb}'
+    lang = svg(PW, H, "Languages across all repositories",
+               "; ".join(f"{n} {p:.1f}%" for n, p, _ in LANGS) + ". Share of code by size across all owned repositories, forks excluded.",
+               f'{panel(t, PW, H)}{head("LANGUAGES · ALL REPOS")}{lb}'
                f'<text x="{PAD}" y="{H-44}" class="s mu" font-size="16">{NOTE[0]}</text>'
                f'<text x="{PAD}" y="{H-21}" class="s mu" font-size="16">{NOTE[1]}</text>', t, GROW)
     stk = svg(PW, H, "Tech stack used in featured projects",
@@ -552,6 +562,20 @@ FEATURED_ACTIVITY = {
     "payzap": "price-guarantee demo with PayPal",
 }
 
+# GitHub's own linguist colours for the languages most likely to show up.
+LANG_COLORS = {
+    "TypeScript": "#3178c6", "JavaScript": "#f1e05a", "Python": "#3572a5", "Java": "#b07219", "Kotlin": "#a97bff",
+    "Rust": "#dea584", "Go": "#00add8", "C": "#555555", "C++": "#f34b7d", "C#": "#178600", "HTML": "#e34c26",
+    "CSS": "#663399", "SCSS": "#c6538c", "Shell": "#89e051", "Solidity": "#aa6746", "Dart": "#00b4ab",
+    "Swift": "#f05138", "PHP": "#4f5d95", "Ruby": "#701516", "Vue": "#41b883", "Svelte": "#ff3e00",
+    "Astro": "#ff5a03", "Jupyter Notebook": "#da5b0b", "Dockerfile": "#384d54", "Lua": "#000080",
+    "Makefile": "#427819", "MDX": "#fcb32c", "PLpgSQL": "#336790", "TeX": "#3d6117", "Move": "#4a137a",
+    "Batchfile": "#c1f12e", "PowerShell": "#012456", "Objective-C": "#438eff", "R": "#198ce7", "Scala": "#c22d40",
+    "Elixir": "#6e4a7e", "Haskell": "#5e5086", "Zig": "#ec915c", "Nix": "#7e7eff", "GLSL": "#5686a5",
+    "WGSL": "#1a5e9a", "Cairo": "#ff4a48", "Vim Script": "#199f4b", "CMake": "#da3434", "Handlebars": "#f7931e",
+}
+OTHER_COLOR = "#8b949e"
+
 def api(path, token=None):
     headers = {"Accept": "application/vnd.github+json", "User-Agent": "hallzyx-profile-bot"}
     if token:
@@ -563,7 +587,7 @@ def api(path, token=None):
 def load_data(path=None):
     if path:
         d = json.load(open(path, encoding="utf-8"))
-        return d["u"], d["r"]
+        return d["u"], d["r"], d.get("langs")  # "langs": {repo: {language: bytes}} is optional offline
     token = os.environ.get("GITHUB_TOKEN")
     user = api(f"/users/{USER}", token)
     repos, page = [], 1
@@ -573,7 +597,33 @@ def load_data(path=None):
         if len(batch) < 100:
             break
         page += 1
-    return user, repos
+    return user, repos, None
+
+def fetch_languages(repos):
+    """Sum the bytes per language over every owned (non-fork) repo except the profile repo."""
+    token = os.environ.get("GITHUB_TOKEN")
+    totals, ok = {}, 0
+    for r in repos:
+        if r.get("fork") or r["name"] == USER:
+            continue
+        try:
+            data = api(f"/repos/{USER}/{r['name']}/languages", token)
+        except Exception as e:  # one broken repo must not break the whole refresh
+            print(f"::warning::languages of {r['name']} not available: {e}")
+            continue
+        ok += 1
+        for lang, size in data.items():
+            totals[lang] = totals.get(lang, 0) + size
+    assert ok and totals, "no language data could be read"
+    return totals
+
+def lang_rows(totals):
+    """Top 5 languages by bytes plus 'Other', as (name, percent, colour)."""
+    total = sum(totals.values())
+    ranked = sorted(totals.items(), key=lambda kv: (-kv[1], kv[0]))
+    rows = [(n, b * 100 / total, LANG_COLORS.get(n, OTHER_COLOR)) for n, b in ranked[:5]]
+    rows.append(("Other", sum(b for _, b in ranked[5:]) * 100 / total, OTHER_COLOR))
+    return rows
 
 def day(iso):
     d = datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ")
@@ -603,7 +653,7 @@ def compute(user, repos):
     return stats, stats2, activity, user["public_repos"], len(ts), len(own), f"{md}, {yr}"
 
 # ---------------------------------------------------------------- README text that mirrors the data
-def patch_readme(stats, activity, pub, ts, own, last_push, today):
+def patch_readme(stats, activity, pub, ts, own, last_push, today, langs=None):
     p = ROOT / "README.md"
     md = p.read_text(encoding="utf-8")
     def sub(pattern, repl, text, flags=0):
@@ -623,15 +673,33 @@ def patch_readme(stats, activity, pub, ts, own, last_push, today):
         print("::warning::README activity list not found, left untouched")
     md = md2
     md = sub(r'Data verified on [A-Z][a-z]{2} \d{1,2}, \d{4}', f"Data verified on {today}", md)
+    if langs:
+        md = sub(r'alt="Languages (?:in featured projects|across all owned repositories)[^"]*"',
+                 'alt="Languages across all owned repositories, by code size (forks excluded): '
+                 + ", ".join(f"{n} {p:.1f}%" for n, p, _ in langs) + '."', md)
+        md = sub(r'Languages measured over [^<\n]*', "Languages measured over all owned repositories", md)
     p.write_text(md, encoding="utf-8")
 
 def main():
-    global STATS, STATS2, STATS_DESC, ACTIVITY
+    global STATS, STATS2, STATS_DESC, ACTIVITY, LANGS, NOTE
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", help="offline JSON {u: user, r: repos} instead of the live API")
     args = ap.parse_args()
-    user, repos = load_data(args.data)
+    user, repos, offline_langs = load_data(args.data)
     STATS, STATS2, ACTIVITY, pub, ts, own, last_push = compute(user, repos)
+    if args.data:
+        totals = {}
+        for per_repo in (offline_langs or {}).values():
+            for lang, size in per_repo.items():
+                totals[lang] = totals.get(lang, 0) + size
+    else:
+        totals = fetch_languages(repos)
+    langs = None
+    if totals:
+        langs = LANGS = lang_rows(totals)
+        NOTE = ["Share of code by size across all", f"{own} owned repos (forks excluded)."]
+        for _l in NOTE:
+            assert tw(_l, 16) <= PW - 2 * PAD, _l
     STATS_DESC = "; ".join(f"{n} {l} ({s})" for n, l, s in STATS) + "."
     t = datetime.now(timezone.utc)
     today = f"{t:%b} {t.day}, {t.year}"
@@ -648,9 +716,11 @@ def main():
         write(f"activity-{th}.svg", timeline(th, ph))
         write(f"divider-{th}.svg", divider(th))
     write_badges()
-    patch_readme(STATS, ACTIVITY, pub, ts, own, last_push, today)
+    patch_readme(STATS, ACTIVITY, pub, ts, own, last_push, today, langs)
     print(f"ok: {pub} public repos, {ts}/{own} TypeScript-first, latest push {last_push}, "
           f"activity: {', '.join(r for _, r, _ in ACTIVITY)}")
+    if langs:
+        print("languages: " + ", ".join(f"{n} {p:.1f}%" for n, p, _ in langs))
 
 if __name__ == "__main__":
     main()
