@@ -315,7 +315,8 @@ PROJECTS = [
     dict(slug="licita-verify", name="LicitaVerify", tier="place", badge="2ND PLACE", event="PunaTech 2026",
          desc="Citizen audit of public procurement: milestones anchored on Arkiv and a Telegram agent that answers questions in natural language.",
          stack=["Next.js", "TypeScript", "Arkiv SDK", "MCP", "Python"]),
-    dict(slug="zeroslop", name="ZeroSlop", tier="place", badge="FINALIST", event="The Next Craft 2026 · team of 3",
+    dict(slug="zeroslop", name="ZeroSlop", tier="place", badge="FINALIST · LIMA WINNER", award="Finalist and Lima chapter winner",
+         event="The Next Craft 2026 · team of 3",
          desc="Checks that whoever opens a PR understands their own change, using a conceptual question and a hypothetical dangerous mutation.",
          stack=["Next.js 16", "TypeScript", "Convex", "Clerk", "MCP"]),
     dict(slug="hedera-swapy", name="Treasury Swap Guard", tier="plain", badge="BOUNTY", event="Scaffold-HBAR Template Bounty",
@@ -380,7 +381,7 @@ def card(theme, p):
 <path d="M{PAD} {FOOT_Y}H{W-PAD-40}M{W-PAD-32} {FOOT_Y}H{W-PAD}" stroke="{t['border']}"/><path d="M{W-PAD-40} {FOOT_Y}v-5M{W-PAD-32} {FOOT_Y}v-5" stroke="{t['border']}"/>
 <text x="{PAD}" y="{FOOT_Y+30}" class="m mu" font-size="15">{slug}</text>
 <text x="{W-PAD}" y="{FOOT_Y+30}" text-anchor="end" class="m ac" font-size="15" font-weight="700">REPO →</text>"""
-    title = f"{p['name']} · {p['badge'].capitalize()}, {p['event']}"
+    title = f"{p['name']} · {p.get('award', p['badge'].capitalize())}, {p['event']}"
     return svg(W, H, title, f"{p['desc']} Stack: {', '.join(p['stack'])}.", body, t)
 
 # ---------------------------------------------------------------- languages + stack (equal-height 400px panels)
@@ -562,7 +563,7 @@ ACTIVITY_BLURBS = {
     "cryptoon": "winner at ETH Global Buenos Aires",
     "alpacto": "winner at Ethereum Lima",
     "licita-verify": "2nd place at PunaTech",
-    "zeroslop": "finalist at The Next Craft",
+    "zeroslop": "finalist · Lima winner, The Next Craft",
     "hedera-swapy": "treasury template on Hedera testnet",
     "payzap": "price-guarantee demo with PayPal",
 }

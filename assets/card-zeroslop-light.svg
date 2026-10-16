@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="373" viewBox="0 0 400 373" role="img" aria-labelledby="t d">
-<title id="t">ZeroSlop · Finalist, The Next Craft 2026 · team of 3</title>
+<title id="t">ZeroSlop · Finalist and Lima chapter winner, The Next Craft 2026 · team of 3</title>
 <desc id="d">Checks that whoever opens a PR understands their own change, using a conceptual question and a hypothetical dangerous mutation. Stack: Next.js 16, TypeScript, Convex, Clerk, MCP.</desc>
 <style>
 .s{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}.tx{fill:#0e191d}.mu{fill:#4a5961}.ac{fill:#00717a}
@@ -8,7 +8,7 @@
 </style>
 <path d="M14.5 0.5L399.5 0.5L399.5 346.5L385.5 360.5L0.5 360.5L0.5 14.5Z" fill="#ffffff" stroke="#c9d6db"/><path d="M1 32V14L14 1H54" fill="none" stroke="#00717a" stroke-width="2"/><path d="M385 360L399 346" stroke="#00717a" stroke-width="2"/>
 <path d="M362.2 32.8h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM371.5 32.8h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM366.8 40.9h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM357.5 40.9h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM352.8 32.8h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM357.5 24.8h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2zM366.8 24.8h3.6l1.8 3.2l-1.8 3.2h-3.6l-1.8-3.2z" fill="#00717a"/>
-<g transform="translate(22 22)"><path d="M8.8 0.8L95.5 0.8L95.5 19.2L87.5 27.2L0.8 27.2L0.8 8.8Z" fill="#00717a12" stroke="#00717a" stroke-width="1.5"/><text x="48.1" y="19.4" text-anchor="middle" class="m ac" font-size="15" font-weight="700">FINALIST</text></g>
+<g transform="translate(22 22)"><path d="M8.8 0.8L221.9 0.8L221.9 19.2L213.9 27.2L0.8 27.2L0.8 8.8Z" fill="#00717a12" stroke="#00717a" stroke-width="1.5"/><text x="111.3" y="19.4" text-anchor="middle" class="m ac" font-size="15" font-weight="700">FINALIST · LIMA WINNER</text></g>
 <text x="22" y="84" class="s tx" font-size="26" font-weight="800" letter-spacing="-.3">ZeroSlop</text>
 <text x="22" y="109" class="s ac" font-size="17" font-weight="700">The Next Craft 2026 · team of 3</text>
 <text x="22" y="138" class="s mu" font-size="17">Checks that whoever opens a PR</text><text x="22" y="163" class="s mu" font-size="17">understands their own change, using a</text><text x="22" y="188" class="s mu" font-size="17">conceptual question and a hypothetical</text><text x="22" y="213" class="s mu" font-size="17">dangerous mutation.</text>
