@@ -17,6 +17,7 @@ SF / Segoe / Helvetica), so a fit here is a fit on real platforms; asserts guard
 every line.
 """
 import argparse
+import html
 import json
 import math
 import os
@@ -291,12 +292,13 @@ def timeline(theme, H):
     out.append(f'<line x1="{lx}" x2="{lx}" y1="{y0-6}" y2="{y0 + 3*step + 46}" stroke="{t["border"]}" stroke-width="2" stroke-dasharray="14 4"/>')
     for i, (d, repo, what) in enumerate(ACTIVITY):
         y = y0 + i * step
-        assert tw(what, 17) <= W - PAD - 32 - PAD, what
+        what = fit_text(what, 17, W - PAD - 32 - PAD)
+        repo = fit_text(repo, 18, W - PAD - 28 - PAD, bold=True)
         dm = lambda r: f"M{lx} {y-6-r}l{r} {r}l-{r} {r}l-{r}-{r}z"
         dot = (f'<path d="{hexpath(lx, y-6, 13, False)}" class="ac pulse" opacity=".25"/><path d="{dm(8)}" class="ac"/>'
                if i == 0 else f'<path d="{dm(7)}" fill="{t["surface"]}" stroke="{t["accent"]}" stroke-width="2"/>')
         out.append(f'{dot}<text x="{PAD+28}" y="{y}" class="m ac" font-size="15" font-weight="700">{d}</text>'
-                   f'<text x="{PAD+28}" y="{y+25}" class="s tx" font-size="18" font-weight="700">{repo}</text>'
+                   f'<text x="{PAD+28}" y="{y+25}" class="s tx" font-size="18" font-weight="700">{escape(repo)}</text>'
                    f'<text x="{PAD+28}" y="{y+49}" class="s mu" font-size="17">{escape(what)}</text>')
     extra = ".pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.1}50%{opacity:.4}}"
     desc = " ".join(f"{d}: {r}, {w}." for d, r, w in ACTIVITY)
@@ -552,8 +554,11 @@ def write_badges():
 USER = "hallzyx"
 AWARDS = 5  # hackathon awards, per the portfolio: not available from the API
 
-# One-line description per featured project for the timeline (curated, same facts as the cards).
-FEATURED_ACTIVITY = {
+# One-line text per repo for the "recent activity" timeline. Priority: this dict (add a line to
+# override any repo), then the repo's GitHub description, then "<language> project".
+# Repos listed in ACTIVITY_EXCLUDE never show up in the timeline.
+ACTIVITY_EXCLUDE = {USER}  # the profile repo: this very workflow commits to it
+ACTIVITY_BLURBS = {
     "cryptoon": "winner at ETH Global Buenos Aires",
     "alpacto": "winner at Ethereum Lima",
     "licita-verify": "2nd place at PunaTech",
@@ -575,6 +580,29 @@ LANG_COLORS = {
     "WGSL": "#1a5e9a", "Cairo": "#ff4a48", "Vim Script": "#199f4b", "CMake": "#da3434", "Handlebars": "#f7931e",
 }
 OTHER_COLOR = "#8b949e"
+
+_SYMBOLS = re.compile("[\u2600-\u27bf\U0001f000-\U0001faff\ufe0f\u200d]")
+
+def clean_text(text):
+    """One tidy line: no emoji or control characters, single spaces."""
+    text = _SYMBOLS.sub("", text or "")
+    text = "".join(ch for ch in text if ch.isprintable() or ch.isspace())
+    return re.sub(r"\s+", " ", text).strip()
+
+def fit_text(text, size, maxw, bold=False, mono=False):
+    """Shorten at a word boundary with an ellipsis so the text fits maxw pixels."""
+    text = clean_text(text)
+    if tw(text, size, bold, mono) <= maxw:
+        return text
+    base = text
+    while base and tw(base.rstrip() + "…", size, bold, mono) > maxw:
+        base = base[:-1]
+    if " " in base and base.rfind(" ") > len(base) * 0.5:
+        base = base[:base.rfind(" ")]
+    return base.rstrip(" ,;:-·") + "…"
+
+def md_escape(text):
+    return re.sub(r"([\\`*_{}\[\]<>#|~])", r"\\\1", text)
 
 def api(path, token=None):
     headers = {"Accept": "application/vnd.github+json", "User-Agent": "hallzyx-profile-bot"}
@@ -643,13 +671,15 @@ def compute(user, repos):
               (str(AWARDS), ["hackathon", "awards"], "per portfolio"),
               (str(len(ts)), ["TypeScript-first", "repos"], f"of {len(own)} owned"),
               (md, ["latest", "public push"], yr)]
-    by_name = {r["name"]: r for r in repos}
-    feat = sorted((by_name[s] for s in FEATURED_ACTIVITY if s in by_name), key=lambda r: r["pushed_at"], reverse=True)[:4]
+    pool = [r for r in own if r["name"] not in ACTIVITY_EXCLUDE]
+    recent = sorted(pool, key=lambda r: r["pushed_at"], reverse=True)[:4]
+    assert len(recent) == 4, "expected at least 4 public repos for the activity timeline"
     activity = []
-    for r in feat:
+    for r in recent:
         m, y = day(r["pushed_at"])
-        activity.append((f"{m}, {y}", r["name"], FEATURED_ACTIVITY[r["name"]]))
-    assert len(activity) == 4, "expected at least 4 featured repos in the API response"
+        what = ACTIVITY_BLURBS.get(r["name"]) or clean_text(r.get("description")).rstrip(".") \
+            or (f"{r['language']} project" if r.get("language") else "Public repository")
+        activity.append((f"{m}, {y}", r["name"], fit_text(what, 17, 400 - 22 - 32 - 22)))
     return stats, stats2, activity, user["public_repos"], len(ts), len(own), f"{md}, {yr}"
 
 # ---------------------------------------------------------------- README text that mirrors the data
@@ -665,8 +695,8 @@ def patch_readme(stats, activity, pub, ts, own, last_push, today, langs=None):
              f'alt="GitHub at a glance: {pub} public repositories (per GitHub API), {AWARDS} hackathon awards (per portfolio), '
              f'{ts} repos with TypeScript as main language out of {own} owned, latest public push {last_push}."', md)
     md = sub(r'alt="Recent activity:[^"]*"',
-             'alt="Recent activity: ' + " ".join(f"{d}, {r}: {w}." for d, r, w in activity) + '"', md)
-    items = "\n".join(f"- **{d}** · [{r}](https://github.com/{USER}/{r}): {w}" for d, r, w in activity)
+             'alt="Recent activity: ' + html.escape(" ".join(f"{d}, {r}: {w}." for d, r, w in activity), quote=True) + '"', md)
+    items = "\n".join(f"- **{d}** · [{md_escape(r)}](https://github.com/{USER}/{r}): {md_escape(w)}" for d, r, w in activity)
     md2, k = re.subn(r'(<summary>Recent activity as text</summary>\n\n).*?(\n\n</details>)',
                      lambda m: m.group(1) + items + m.group(2), md, flags=re.S)
     if k == 0:
