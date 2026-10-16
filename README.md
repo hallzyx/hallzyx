@@ -1,4 +1,4 @@
-<!-- Visual assets: /assets (dark + light SVG pairs). Data verified on Oct 16, 2026. -->
+<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Oct 16, 2026. -->
 
 <p align="center">
 <a href="https://iam.arroz.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg" width="1000" alt="Brayan Roberto Ccarita Cruz (hallzyx) · &lt;arroz/&gt;. Software Engineering student in Lima, Peru. AI Agents · Full-stack · Cloud · Web3. Portfolio: iam.arroz.dev"></picture></a>
@@ -70,5 +70,5 @@
 <p align="center">
 More about me and my projects at <a href="https://iam.arroz.dev/"><b>iam.arroz.dev</b></a> · <a href="https://github.com/hallzyx">github.com/hallzyx</a>
 <br>
-<sub>Data verified on Oct 16, 2026 · Languages measured over all owned repositories</sub>
+<sub>Stats refreshed automatically on Oct 16, 2026 · Languages measured over all owned repositories</sub>
 </p>

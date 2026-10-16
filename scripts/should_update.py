@@ -9,7 +9,7 @@ refreshed today? If so it writes `update=true` to $GITHUB_OUTPUT.
   * new day of pushes  = the newest push to a public, non-fork repo (excluding the
     profile repo itself, which the workflow commits to) falls on a different UTC
     day than the "latest public push" shown in the README;
-  * once per day       = skipped when the README already says "Data verified on"
+  * once per day       = skipped when the README already says "Stats refreshed automatically on"
     today, so further pushes the same day wait for the next day;
   * FORCE=true         = always update (manual run and the weekly safety net).
 
@@ -50,7 +50,7 @@ def decide():
         return True, "forced run"
     readme = README.read_text(encoding="utf-8")
     shown = re.search(r"latest public push " + DATE, readme)
-    verified = re.search(r"Data verified on " + DATE, readme)
+    verified = re.search(r"(?:Data verified on|Stats refreshed automatically on) " + DATE, readme)
     if not shown or not verified:
         return True, "could not read the state from the README"
     if os.environ.get("PROFILE_TODAY"):

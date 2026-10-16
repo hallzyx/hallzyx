@@ -702,7 +702,8 @@ def patch_readme(stats, activity, pub, ts, own, last_push, today, langs=None):
     if k == 0:
         print("::warning::README activity list not found, left untouched")
     md = md2
-    md = sub(r'Data verified on [A-Z][a-z]{2} \d{1,2}, \d{4}', f"Data verified on {today}", md)
+    md = sub(r'(?:Data verified on|Stats refreshed automatically on) [A-Z][a-z]{2} \d{1,2}, \d{4}',
+             f"Stats refreshed automatically on {today}", md)
     if langs:
         md = sub(r'alt="Languages (?:in featured projects|across all owned repositories)[^"]*"',
                  'alt="Languages across all owned repositories, by code size (forks excluded): '
