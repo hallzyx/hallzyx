@@ -13,7 +13,7 @@
 
 <p align="center">
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 113 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 36 repos with TypeScript as main language out of 95 owned, latest public push Oct 16, 2026."></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Oct 14, 2026, payzap: price-guarantee demo with PayPal. Oct 5, 2026, hedera-swapy: treasury template on Hedera testnet. Aug 29, 2026, zeroslop: finalist at The Next Craft. Aug 12, 2026, alpacto: winner at Ethereum Lima."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Oct 16, 2026, apertus: Python project. Oct 15, 2026, detengue: Kotlin project. Oct 14, 2026, payzap: price-guarantee demo with PayPal. Oct 13, 2026, gemma-en-accion: HTML project."></picture>
 </p>
 
 > 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
@@ -56,10 +56,10 @@
 <details>
 <summary>Recent activity as text</summary>
 
+- **Oct 16, 2026** · [apertus](https://github.com/hallzyx/apertus): Python project
+- **Oct 15, 2026** · [detengue](https://github.com/hallzyx/detengue): Kotlin project
 - **Oct 14, 2026** · [payzap](https://github.com/hallzyx/payzap): price-guarantee demo with PayPal
-- **Oct 5, 2026** · [hedera-swapy](https://github.com/hallzyx/hedera-swapy): treasury template on Hedera testnet
-- **Aug 29, 2026** · [zeroslop](https://github.com/hallzyx/zeroslop): finalist at The Next Craft
-- **Aug 12, 2026** · [alpacto](https://github.com/hallzyx/alpacto): winner at Ethereum Lima
+- **Oct 13, 2026** · [gemma-en-accion](https://github.com/hallzyx/gemma-en-accion): HTML project
 
 </details>
 
