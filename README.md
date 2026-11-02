@@ -12,8 +12,8 @@
 ## GitHub at a glance
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 118 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 38 repos with TypeScript as main language out of 99 owned, latest public push Nov 2, 2026."></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 2, 2026, tezeo: CSS project. Nov 1, 2026, cut-sense: TypeScript project. Oct 29, 2026, ghost-shift: TypeScript project. Oct 28, 2026, alumno-cero: JavaScript project."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 119 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 38 repos with TypeScript as main language out of 100 owned, latest public push Nov 2, 2026."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 2, 2026, cruzzero-data: Public repository. Nov 2, 2026, tezeo: CSS project. Nov 1, 2026, cut-sense: TypeScript project. Oct 29, 2026, ghost-shift: TypeScript project."></picture>
 </p>
 
 > 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
@@ -56,10 +56,10 @@
 <details>
 <summary>Recent activity as text</summary>
 
+- **Nov 2, 2026** · [cruzzero-data](https://github.com/hallzyx/cruzzero-data): Public repository
 - **Nov 2, 2026** · [tezeo](https://github.com/hallzyx/tezeo): CSS project
 - **Nov 1, 2026** · [cut-sense](https://github.com/hallzyx/cut-sense): TypeScript project
 - **Oct 29, 2026** · [ghost-shift](https://github.com/hallzyx/ghost-shift): TypeScript project
-- **Oct 28, 2026** · [alumno-cero](https://github.com/hallzyx/alumno-cero): JavaScript project
 
 </details>
 
