@@ -269,11 +269,15 @@ def stats(theme, H):
     for i, (num, label, sub) in enumerate(STATS2):
         x, y = (i % 2) * (w + gap), (i // 2) * (h + gap)
         inner = w - 34
-        assert tw(num, NS, True) <= inner and all(tw(l, 18, True) <= inner for l in label) and tw(sub, 15, mono=True) <= inner, num
+        # Wide values (a date like "Nov 14") shrink to fit instead of aborting the whole refresh.
+        ns = NS
+        while tw(num, ns, True) > inner and ns > 24:
+            ns -= 1
+        assert tw(num, ns, True) <= inner and all(tw(l, 18, True) <= inner for l in label) and tw(sub, 15, mono=True) <= inner, num
         out.append(f'<g transform="translate({x} {y})">{panel(t, w, h)}'
                    f'<path d="M{w-30} 22h12M{w-14} 22h4M{w-14} 22v4" fill="none" stroke="{t["accent"]}" stroke-width="2"/>'
                    f'<text x="{w-34}" y="27" text-anchor="end" class="m mu" font-size="15">0{i+1}</text>'
-                   f'<text x="17" y="{h-98}" class="s tx" font-size="{NS}" font-weight="800" letter-spacing="-1">{num}</text>'
+                   f'<text x="17" y="{h-98}" class="s tx" font-size="{ns}" font-weight="800" letter-spacing="-1">{num}</text>'
                    f'<text x="17" y="{h-64}" class="s tx" font-size="18" font-weight="700">{escape(label[0])}</text>'
                    f'<text x="17" y="{h-41}" class="s tx" font-size="18" font-weight="700">{escape(label[1])}</text>'
                    f'<text x="17" y="{h-17}" class="m mu" font-size="15">{escape(sub)}</text></g>')
