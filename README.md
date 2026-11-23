@@ -1,4 +1,4 @@
-<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 22, 2026. -->
+<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 23, 2026. -->
 
 <p align="center">
 <a href="https://iam.arroz.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg" width="1000" alt="Brayan Roberto Ccarita Cruz (hallzyx) · &lt;arroz/&gt;. Software Engineering student in Lima, Peru. AI Agents · Full-stack · Cloud · Web3. Portfolio: iam.arroz.dev"></picture></a>
@@ -12,8 +12,8 @@
 ## GitHub at a glance
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 122 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 39 repos with TypeScript as main language out of 103 owned, latest public push Nov 22, 2026."></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 22, 2026, pokerface: Go project. Nov 22, 2026, nexus-pnp: JavaScript project. Nov 20, 2026, oh-my-graphy: TypeScript project. Nov 14, 2026, gemma-en-accion: HTML project."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 122 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 39 repos with TypeScript as main language out of 103 owned, latest public push Nov 23, 2026."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 23, 2026, oh-my-graphy: TypeScript project. Nov 22, 2026, pokerface: Go project. Nov 22, 2026, nexus-pnp: JavaScript project. Nov 14, 2026, gemma-en-accion: HTML project."></picture>
 </p>
 
 > 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
@@ -56,9 +56,9 @@
 <details>
 <summary>Recent activity as text</summary>
 
+- **Nov 23, 2026** · [oh-my-graphy](https://github.com/hallzyx/oh-my-graphy): TypeScript project
 - **Nov 22, 2026** · [pokerface](https://github.com/hallzyx/pokerface): Go project
 - **Nov 22, 2026** · [nexus-pnp](https://github.com/hallzyx/nexus-pnp): JavaScript project
-- **Nov 20, 2026** · [oh-my-graphy](https://github.com/hallzyx/oh-my-graphy): TypeScript project
 - **Nov 14, 2026** · [gemma-en-accion](https://github.com/hallzyx/gemma-en-accion): HTML project
 
 </details>
@@ -70,5 +70,5 @@
 <p align="center">
 More about me and my projects at <a href="https://iam.arroz.dev/"><b>iam.arroz.dev</b></a> · <a href="https://github.com/hallzyx">github.com/hallzyx</a>
 <br>
-<sub>Stats refreshed automatically on Nov 22, 2026 · Languages measured over all owned repositories</sub>
+<sub>Stats refreshed automatically on Nov 23, 2026 · Languages measured over all owned repositories</sub>
 </p>
