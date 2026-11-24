@@ -1,4 +1,4 @@
-<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 23, 2026. -->
+<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 24, 2026. -->
 
 <p align="center">
 <a href="https://iam.arroz.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg" width="1000" alt="Brayan Roberto Ccarita Cruz (hallzyx) · &lt;arroz/&gt;. Software Engineering student in Lima, Peru. AI Agents · Full-stack · Cloud · Web3. Portfolio: iam.arroz.dev"></picture></a>
@@ -12,8 +12,8 @@
 ## GitHub at a glance
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 122 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 39 repos with TypeScript as main language out of 103 owned, latest public push Nov 23, 2026."></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 23, 2026, oh-my-graphy: TypeScript project. Nov 22, 2026, pokerface: Go project. Nov 22, 2026, nexus-pnp: JavaScript project. Nov 14, 2026, gemma-en-accion: HTML project."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 123 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 39 repos with TypeScript as main language out of 104 owned, latest public push Nov 23, 2026."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 23, 2026, genomap: HTML project. Nov 23, 2026, oh-my-graphy: TypeScript project. Nov 22, 2026, pokerface: Go project. Nov 22, 2026, nexus-pnp: JavaScript project."></picture>
 </p>
 
 > 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
@@ -49,17 +49,17 @@
 ## Languages & stack
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages across all owned repositories, by code size (forks excluded): TypeScript 42.8%, C# 16.3%, Jupyter Notebook 8.4%, CSS 6.2%, Python 5.7%, Other 20.6%."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages across all owned repositories, by code size (forks excluded): TypeScript 42.7%, C# 16.3%, Jupyter Notebook 8.4%, CSS 6.2%, Python 5.7%, Other 20.7%."></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg" width="384" alt="Tech stack used in the featured projects. AI agents: Coinbase AgentKit, MCP, x402. Full-stack: TypeScript, React, Next.js, Convex, Clerk, Python. Web3: Solidity, Rust, Arbitrum Stylus, Hardhat, wagmi, Base, Hedera. Data, infra and APIs: PostgreSQL, Docker, PayPal API."></picture>
 </p>
 
 <details>
 <summary>Recent activity as text</summary>
 
+- **Nov 23, 2026** · [genomap](https://github.com/hallzyx/genomap): HTML project
 - **Nov 23, 2026** · [oh-my-graphy](https://github.com/hallzyx/oh-my-graphy): TypeScript project
 - **Nov 22, 2026** · [pokerface](https://github.com/hallzyx/pokerface): Go project
 - **Nov 22, 2026** · [nexus-pnp](https://github.com/hallzyx/nexus-pnp): JavaScript project
-- **Nov 14, 2026** · [gemma-en-accion](https://github.com/hallzyx/gemma-en-accion): HTML project
 
 </details>
 
@@ -70,5 +70,5 @@
 <p align="center">
 More about me and my projects at <a href="https://iam.arroz.dev/"><b>iam.arroz.dev</b></a> · <a href="https://github.com/hallzyx">github.com/hallzyx</a>
 <br>
-<sub>Stats refreshed automatically on Nov 23, 2026 · Languages measured over all owned repositories</sub>
+<sub>Stats refreshed automatically on Nov 24, 2026 · Languages measured over all owned repositories</sub>
 </p>
