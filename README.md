@@ -1,4 +1,4 @@
-<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 27, 2026. -->
+<!-- Visual assets: /assets (dark + light SVG pairs). Stats refreshed automatically on Nov 28, 2026. -->
 
 <p align="center">
 <a href="https://iam.arroz.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/banner-dark.svg" width="1000" alt="Brayan Roberto Ccarita Cruz (hallzyx) · &lt;arroz/&gt;. Software Engineering student in Lima, Peru. AI Agents · Full-stack · Cloud · Web3. Portfolio: iam.arroz.dev"></picture></a>
@@ -12,8 +12,8 @@
 ## GitHub at a glance
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 124 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 39 repos with TypeScript as main language out of 105 owned, latest public push Nov 27, 2026."></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 27, 2026, genomap: JavaScript project. Nov 24, 2026, awasa: JavaScript project. Nov 23, 2026, oh-my-graphy: TypeScript project. Nov 22, 2026, pokerface: Go project."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stats-dark.svg" width="384" alt="GitHub at a glance: 126 public repositories (per GitHub API), 5 hackathon awards (per portfolio), 40 repos with TypeScript as main language out of 107 owned, latest public push Nov 28, 2026."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/activity-dark.svg" width="384" alt="Recent activity: Nov 28, 2026, awanta: TypeScript project. Nov 27, 2026, alpacto: winner at Ethereum Lima. Nov 27, 2026, arroz_img: Public repository. Nov 27, 2026, genomap: JavaScript project."></picture>
 </p>
 
 > 100+ public repositories: hackathon projects, challenges and experiments. These are the ones that best show how I build end to end.
@@ -49,17 +49,17 @@
 ## Languages & stack
 
 <p align="center">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages across all owned repositories, by code size (forks excluded): TypeScript 41.7%, C# 15.9%, Jupyter Notebook 8.2%, JavaScript 6.7%, CSS 6.6%, Other 21.0%."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/languages-dark.svg" width="384" alt="Languages across all owned repositories, by code size (forks excluded): TypeScript 42.2%, C# 15.6%, Jupyter Notebook 8.0%, CSS 6.7%, JavaScript 6.6%, Other 20.8%."></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-light.svg"><img src="https://raw.githubusercontent.com/hallzyx/hallzyx/main/assets/stack-dark.svg" width="384" alt="Tech stack used in the featured projects. AI agents: Coinbase AgentKit, MCP, x402. Full-stack: TypeScript, React, Next.js, Convex, Clerk, Python. Web3: Solidity, Rust, Arbitrum Stylus, Hardhat, wagmi, Base, Hedera. Data, infra and APIs: PostgreSQL, Docker, PayPal API."></picture>
 </p>
 
 <details>
 <summary>Recent activity as text</summary>
 
+- **Nov 28, 2026** · [awanta](https://github.com/hallzyx/awanta): TypeScript project
+- **Nov 27, 2026** · [alpacto](https://github.com/hallzyx/alpacto): winner at Ethereum Lima
+- **Nov 27, 2026** · [arroz\_img](https://github.com/hallzyx/arroz_img): Public repository
 - **Nov 27, 2026** · [genomap](https://github.com/hallzyx/genomap): JavaScript project
-- **Nov 24, 2026** · [awasa](https://github.com/hallzyx/awasa): JavaScript project
-- **Nov 23, 2026** · [oh-my-graphy](https://github.com/hallzyx/oh-my-graphy): TypeScript project
-- **Nov 22, 2026** · [pokerface](https://github.com/hallzyx/pokerface): Go project
 
 </details>
 
@@ -70,5 +70,5 @@
 <p align="center">
 More about me and my projects at <a href="https://iam.arroz.dev/"><b>iam.arroz.dev</b></a> · <a href="https://github.com/hallzyx">github.com/hallzyx</a>
 <br>
-<sub>Stats refreshed automatically on Nov 27, 2026 · Languages measured over all owned repositories</sub>
+<sub>Stats refreshed automatically on Nov 28, 2026 · Languages measured over all owned repositories</sub>
 </p>
